@@ -1,0 +1,167 @@
+<?php
+require 'db.php';
+?> 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nike shop</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="header_ihner">
+			<nav class="navigation">
+				<div class="nav">
+					<a href="#" class="naver-1">Support</a>
+					<a href="#" class="naver-1">Delivery</a>
+					<a href="#" class="naver-1">Legal</a>
+					<a href="#" class="naver-1">About Us</a>
+				</div>
+                <?php
+                if (!isset($_SESSION['logged_user'])){
+                	require 'Login_reg.html';
+                }else{
+                	require 'user.php';
+                   	    
+                }
+                ?>
+			</nav>
+			<div class="container">
+				<div class="logo"></div>
+				<div class="catalog">
+					<a href="#" class="cataloger">Home</a>
+					<a href="#" class="cataloger">Men</a>
+					<a href="#" class="cataloger">Women</a>
+					<a href="#" class="cataloger">Children</a>
+					<a href="#" class="cataloger">Baby</a>
+					<a href="#" class="cataloger">Our Brands</a>
+					<a href="#" class="cataloger">Sales</a>
+				</div>
+			</div>
+		</div>
+		<div class="ad">
+			<div class="ad_image"></div>
+			<div class="main_ad">
+				<p id="first">From $80.00</p>
+				<p id="second">Nike Air Max</p>
+				<p id="third">50 Variants</p>
+				<p id="fourth">Since this is our favorite sneaker, we`re bringing you 50 variants`s needs</p>
+				<a href="#" id="browse">browse variants</a>
+			</div>
+		</div>
+	</header>
+	<div class="container_1">
+		<div class="kyrie">
+			<a href="#" class="view_0">view collection</a>
+		</div>
+		<div class="new">
+			<div class="arrivals">
+				<a href="" class="view_1">Discover</a>
+			</div>
+			<div class="banner">
+				<div class="line">
+					<a href="#"class="athletes_0">Best for <b class="athletes">athletes</b></a>		
+				</div>
+				<div class="up">
+					<a href="#" class="upper"><b class="b">___</b>Feel<br /><b class="prem">premium</b></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container_2">
+		<div class="tager">
+			<a href="#" class="tags" id="new">new</a>
+			<a href="#" class="tags">popular</a>
+			<a href="#" class="tags">top picks</a>
+		</div>
+	</div>
+	<div class="products">
+		<div class="row_1">
+			<div class="item_container_1"><a class="item_1" href="#"></a></div>
+			<div class="item_container_2"><a class="item_2" href="#"></a></div>
+			<div class="item_container_3"><a class="item_3" href="#"></a></div>
+			<div class="item_container_4"><a class="item_4" href="#"></a></div>
+		</div>
+		<div class="row_2">
+			<div class="item_container_5"><a class="item_5" href="#"></a></div>
+		    <div class="item_container_6"><a class="item_6" href="#"></a></div>
+		    <div class="item_container_7"><a class="item_7" href="#"></a></div>
+		    <div class="item_container_8"><a class="item_8" href="#"></a></div>
+		</div>
+	</div>
+	<div class="brands">
+		<div class="brand"></div>
+	</div>
+	<div class="cont">
+		<div class="users"></div>
+		<div class="comment"></div>		
+	</div>
+	<div class="news" id="latest_news">
+		<div class="latest_news">latest news</div>
+		<div class="container_news">
+			<div class="new_1"><a class="now_1" href="#"></a></div>
+			<div class="new_2"><a class="now_2" href="#"></a></div>
+			<div class="new_3"><a class="now_3" href="#"></a></div>
+		</div>
+	</div>
+	<div class="cta">
+		<div class="cta_logo"></div>
+		<div class="cta_button">
+			<a class="cta_button_1" href="#">make an inquiry</a>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer_logo"></div>
+		<hr class="hor">
+		<div class="info">
+			<div class="contacts"></div>
+			<div class="full_menu">
+				<div class="punkt">
+					<a class="linker mainer" href="">NAVIGATION</a>
+					<a class="linker" href="">Home</a>
+					<a class="linker" href="">About Us</a>
+					<a class="linker" href="#latest_news">Latest News</a>
+					<a class="linker" href="">Reviews</a>
+					<a class="linker" href="">Brands</a>
+				</div>
+				<div class="punkt">
+					<a class="linker mainer" href="">CATEGORIES</a>
+					<a class="linker" href="">Men</a>
+					<a class="linker" href="">Women</a>
+					<a class="linker" href="">Children</a>
+					<a class="linker" href="">Baby</a>
+					<a class="linker" href="">Accessories</a>
+				</div>
+				<div class="punkt">
+					<a class="linker mainer" href="">SALES</a>
+					<a class="linker " href="">New arriavals</a>
+					<a class="linker" href="">Most popular</a>
+					<a class="linker " href="">Top Picks</a>
+					<a class="linker" href="">Outlet</a>
+				</div>
+				<div class="punkt">
+					<a class="linker mainer" href="">SUPPORT</a>
+					<a class="linker" href="">Shipping&Delivery</a>
+					<a class="linker" href="">Return Policy</a>
+					<a class="linker" href="">Terms of Service</a>
+					<a class="linker" href="">Privacy Policy</a>
+					<a class="linker" href="">Contact Us</a>
+				</div>
+			</div>			
+		</div>
+		<hr class="hor">
+		<div class="site_end">
+			<div class="site_logo"></div>
+			<div class="c">© 2017 Sportshold.All rights reserved</div>
+			<div class="media">
+				<a class="twitter" href=""></a>
+				<a class="facebook" href=""></a>
+				<a class="mall" href=""></a>
+				<a class="youtube" href="https://www.youtube.com"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
